@@ -1,0 +1,24 @@
+.DS_Store
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+.build/
+
+# Device data and personal configuration must never be published.
+PersonalDevices.*
+PersonalConfig.*
+*.mobileprovision
+*.p12
+*.p8
+*.key
+*.pem
+iphone-ssh.pub
+iphone-network.json
+devices.json
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc

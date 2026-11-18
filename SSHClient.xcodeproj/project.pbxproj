@@ -1,0 +1,43 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 77;
+	objects = {
+C00000000000000000000007 = {isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/apple/swift-log.git"; requirement = {kind = exactVersion; version = 1.6.4; }; };
+D00000000000000000000001 = {isa = PBXFileSystemSynchronizedRootGroup; path = Tests; sourceTree = "<group>"; };
+D00000000000000000000002 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SSHClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+D00000000000000000000003 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+D00000000000000000000004 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+D00000000000000000000005 = {isa = PBXNativeTarget; buildConfigurationList = D00000000000000000000006; buildPhases = (D00000000000000000000003, D00000000000000000000004); buildRules = (); dependencies = (D0000000000000000000000A); fileSystemSynchronizedGroups = (D00000000000000000000001); name = SSHClientTests; productName = SSHClientTests; productReference = D00000000000000000000002; productType = "com.apple.product-type.bundle.unit-test"; };
+D00000000000000000000006 = {isa = XCConfigurationList; buildConfigurations = (D00000000000000000000007, D00000000000000000000008); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+D00000000000000000000007 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = de.michaelhein.SSHClientTests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSHClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SSHClient"; BUNDLE_LOADER = "$(TEST_HOST)"; }; name = Debug; };
+D00000000000000000000008 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = de.michaelhein.SSHClientTests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSHClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SSHClient"; BUNDLE_LOADER = "$(TEST_HOST)"; }; name = Release; };
+D00000000000000000000009 = {isa = PBXContainerItemProxy; containerPortal = B00000000000000000000009; proxyType = 1; remoteGlobalIDString = B00000000000000000000008; remoteInfo = SSHClient; };
+D0000000000000000000000A = {isa = PBXTargetDependency; target = B00000000000000000000008; targetProxy = D00000000000000000000009; };
+
+C00000000000000000000001 = {isa = PBXBuildFile; productRef = C00000000000000000000003; };
+C00000000000000000000002 = {isa = PBXBuildFile; productRef = C00000000000000000000004; };
+C00000000000000000000003 = {isa = XCSwiftPackageProductDependency; package = C00000000000000000000005; productName = Citadel; };
+C00000000000000000000004 = {isa = XCSwiftPackageProductDependency; package = C00000000000000000000006; productName = SwiftTerm; };
+C00000000000000000000005 = {isa = XCLocalSwiftPackageReference; relativePath = Vendor/Citadel; };
+C00000000000000000000006 = {isa = XCRemoteSwiftPackageReference; repositoryURL = "https://github.com/migueldeicaza/SwiftTerm.git"; requirement = {kind = exactVersion; version = 1.20.0; }; };
+
+		B00000000000000000000001 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = SSHClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00000000000000000000002 = {isa = PBXFileSystemSynchronizedRootGroup; path = SSHClient; sourceTree = "<group>"; };
+		B00000000000000000000003 = {isa = PBXGroup; children = (D00000000000000000000001, B00000000000000000000002, B00000000000000000000004); sourceTree = "<group>"; };
+		B00000000000000000000004 = {isa = PBXGroup; children = (B00000000000000000000001); name = Products; sourceTree = "<group>"; };
+		B00000000000000000000005 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (C00000000000000000000001, C00000000000000000000002); runOnlyForDeploymentPostprocessing = 0; };
+		B00000000000000000000006 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		B00000000000000000000007 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		B00000000000000000000008 = {isa = PBXNativeTarget; buildConfigurationList = B0000000000000000000000D; buildPhases = (B00000000000000000000006, B00000000000000000000005, B00000000000000000000007); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (B00000000000000000000002); name = SSHClient; packageProductDependencies = (C00000000000000000000003, C00000000000000000000004); productName = SSHClient; productReference = B00000000000000000000001; productType = "com.apple.product-type.application"; };
+		B00000000000000000000009 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2610; LastUpgradeCheck = 2610; TargetAttributes = {B00000000000000000000008 = {CreatedOnToolsVersion = 26.1; }; }; }; buildConfigurationList = B0000000000000000000000C; developmentRegion = de; hasScannedForEncodings = 0; knownRegions = (de, Base); mainGroup = B00000000000000000000003; minimizedProjectReferenceProxies = 1; preferredProjectObjectVersion = 77; productRefGroup = B00000000000000000000004; packageReferences = (C00000000000000000000007, C00000000000000000000005, C00000000000000000000006); projectDirPath = ""; projectRoot = ""; targets = (B00000000000000000000008, D00000000000000000000005); };
+		B0000000000000000000000A = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; ONLY_ACTIVE_ARCH = YES; ENABLE_TESTABILITY = YES; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+		B0000000000000000000000B = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_VERSION = 5.0; }; name = Release; };
+		B0000000000000000000000C = {isa = XCConfigurationList; buildConfigurations = (B0000000000000000000000A, B0000000000000000000000B); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B0000000000000000000000D = {isa = XCConfigurationList; buildConfigurations = (B0000000000000000000000E, B0000000000000000000000F); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B0000000000000000000000E = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Config/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = de.michaelhein.SSHClient; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
+		B0000000000000000000000F = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Config/Info.plist; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = de.michaelhein.SSHClient; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
+	};
+	rootObject = B00000000000000000000009;
+}
